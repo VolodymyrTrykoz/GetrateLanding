@@ -1,0 +1,89 @@
+.whatIsThat
+  padding: get-vw(130px) 0 get-vw(130px)
+  @extend %relative
+  &__wrapper
+    display: grid
+    grid-template-columns: .9fr 1fr
+    grid-template-areas: 'left''rigth'
+  h2
+    font-size: get-vw(56px)
+    margin-bottom: get-vw(25px)
+    font-weight: 700
+    color: #21314b
+  p
+    font-size: get-vw(16px)
+    color: #9ab4c1
+    width: 70%
+    line-height: 1.7
+  &__left
+    @extend %relative
+    .white
+      position: absolute
+      top: 45%
+      left: 32%
+      z-index: 10
+      width: get-vw(200px)
+  &__right
+    padding-left: 15px
+    @extend %relative
+    .circleMD
+      position: absolute
+      z-index: 50
+      width: get-vw(341px)
+      right: get-vw(-348px)
+      bottom: get-vw(-305px)
+  img
+    position: absolute
+    width: 50vw
+    right: get-vw(-30px)
+    z-index: 5
+  &__scroll
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: get-vw(120px)
+    background: $blue
+    &-text
+      font-size: get-vw(14px)
+      font-weight: 500
+      position: relative
+      z-index: 15
+      top: -9.9vw
+      left: -1.1vw
+      transform: rotateZ(-90deg)
+      transform-origin: center center
+      text-transform: uppercase
+      color: $blue
+      background: #fff
+      padding: 0 get-vw(150px) 0 get-vw(10px)
+      &:after
+        content: ''
+        position: absolute
+        left: get-vw(-150px)
+        top: get-vw(8px)
+        width: get-vw(150px)
+        height: get-vw(2px)
+        background: $blue
+        opacity: .08
+  &__line
+      position: absolute
+      z-index: -1
+      top: -0.5vw
+      left: get-vw(-1px)
+      width: get-vw(120px)
+      height: get-vw(2px)
+      background: $blue
+      transform: rotateZ(90deg)
+      animation: line 3.5s ease-in-out infinite
+      transition: top 3.5s ease-in-out
+
+.tab, .mob
+  will-change: top
+
+@keyframes line
+  from
+    top: -9vw
+  to
+    top: 4vw
+

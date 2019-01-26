@@ -1,0 +1,44 @@
+.business
+  background: $blue
+  color: #fff
+  position: relative
+  overflow: hidden
+  .partCircle
+    position: absolute
+    z-index: 0
+    left: 0
+    bottom: 0
+    width: 28vw
+    &SM
+      position: absolute
+      right: 0
+      top: 0
+      width: 6vw
+  h2
+    margin-top: get-vw(-10px)
+    font-size: get-vw(56px)
+    line-height: 64px
+  .number
+    font-size: get-vw(36px)
+  .title
+    font-size: get-vw(24px)
+    line-height: 34px
+    margin: get-vw(10px) auto 15px
+    color: #2de2f7
+  .text
+    font-size: 16px
+    opacity: 0.7
+    margin: 0
+    font-weight: 300
+    line-height: 24px
+  &__wrapper
+    display: grid
+    grid-template-columns: 0.7fr 1.3fr
+    padding: get-vw(100px) 0
+  &__left
+    @extend %relative
+  &__right
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: get-vw(30px)
+    grid-row-gap: get-vw(30px)

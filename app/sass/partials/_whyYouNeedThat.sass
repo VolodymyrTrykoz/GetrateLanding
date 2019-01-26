@@ -1,0 +1,106 @@
+.whyYouNeedThat
+  @extend %relative
+  overflow: hidden
+  background-image: linear-gradient(to right, $blue get-vw(875px), #fafcfc get-vw(875px))
+  .partCircle
+    position: absolute
+    z-index: 0
+    left: 0
+    bottom: 0
+    width: 28vw
+    &SM
+      position: absolute
+      right: 53vw
+      top: 0.2vw
+      width: 7vw
+  &__wrapper
+    display: grid
+    grid-template-columns: .9fr 1.1fr
+    padding: get-vw(50px) 0
+    //height: get-vw(570px)
+  &__left
+    color: #fff
+    padding: get-vw(100px) 0
+    @extend %relative
+    h2
+      font-size: get-vw(56px)
+      line-height: 64px
+      @extend %relative
+      &:after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: get-vw(-30px)
+        width: get-vw(75px)
+        height: 2px
+        background: #fff
+    p
+      width: 80%
+      padding-top: get-vw(20px)
+      opacity: 0.7
+      line-height: 26px
+
+  &__right
+    @extend %relative
+    p
+      span
+      display: inline-block
+      font-size: get-vw(24px)
+      line-height: 1.34
+      padding-top: get-vw(150px)
+      &:first-child
+        padding-left: 50px
+  &__slider
+    position: absolute
+    left: 0
+    top: get-vw(333px)
+    width: 100%
+    p
+      font-size: get-vw(16px)
+      line-height: 24px
+      color: #9AB4C1
+      padding-top: get-vw(25px)
+    .uber
+        padding-top: get-vw(25px)
+    img
+      height: get-vw(40px)
+  .uberSVG
+    height: 30px
+    margin: get-vw(5px) 0
+
+//slider goes here
+.slick-prev, .slick-next
+  top: initial
+  bottom: get-vw(-135px)
+  width: get-vw(50px)
+  height: get-vw(50px)
+
+.slick-prev
+  z-index: 5
+  left: get-vw(-51.5px)
+  &:after
+    content: '<'
+
+.slick-next:before, .slick-prev:before
+  font-size: 0
+
+.slick-next
+  left: get-vw(-2px)
+  background-size: cover
+
+.slick-prev, .slick-prev:focus, .slick-prev:hover
+  background: url(../img/svg/left-arrow.svg), #fff
+.slick-next,.slick-next:focus, .slick-next:hover
+  background: url(../img/svg/arrow.svg), $blue
+
+
+.slick-prev, .slick-prev:focus, .slick-prev:hover,
+.slick-next,.slick-next:focus, .slick-next:hover
+  background-size: 35%
+  background-repeat: no-repeat
+  background-position: center center
+
+.slider__item
+  margin-left: get-vw(50px)
+  outline: none
+

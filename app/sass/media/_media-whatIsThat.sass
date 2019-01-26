@@ -1,0 +1,58 @@
+@media screen and (max-width: 1024px)
+  .whatIsThat
+    p
+      font-size: 16px
+      width: 100%
+    &__scroll-text
+      font-size: 14px
+      &:after
+        top: .7vw
+
+@media screen and (max-width: 768px)
+  .whatIsThat
+    &__scroll-text
+      font-size: 12px
+      &:after
+        top: .2vw
+
+@media screen and (max-width: 500px)
+  .whatIsThat
+    &__scroll-text
+      display: none
+    &__wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr .6fr
+      grid-template-areas: 'right' 'left'
+    &__left
+      grid-area: left
+      .white
+        top: 22%
+        left: 33%
+        z-index: 10
+        width: 39vw
+    &__right
+      grid-area: right
+    h2
+      font-size: 14vw
+    p
+      font-size: 4.8vw
+    .circleMD
+      position: absolute
+      z-index: -1
+      width: 25vw
+      right: 75vw
+      top: -6vw
+    img
+      width: 150vw
+      right: -40vw
+
+@media screen and (max-width: 420px)
+  .whatIsThat
+    img
+      width: 135vw
+      right: -25vw
+@media screen and (max-width: 375px)
+  .whatIsThat
+    img
+      width: 135vw
+      right: -25vw

@@ -1,0 +1,48 @@
+.change
+  position: relative
+  padding-top: get-vw(120px)
+  margin-bottom: get-vw(140px)
+  &__left
+    position: relative
+    grid-area: left
+    .circleMD
+      position: absolute
+      width: get-vw(170px)
+      left: get-vw(-100px)
+      top: get-vw(-20px)
+  &__right
+    grid-area: right
+  h1
+    font-size: get-vw(64px)
+    line-height: get-vw(72px)
+    margin-top: get-vw(90px)
+    font-weight: 700
+    color: #21314b
+    margin-bottom: 0
+  p
+    font-size: get-vw(18px)
+    font-weight: 400
+    color: #9ab4c1
+    width: 55%
+    line-height: get-vw(26px)
+  .btn
+    margin-right: get-vw(25px)
+    &__wrapper
+      padding: get-vw(10px) 0 get-vw(150px)
+  svg
+    position: absolute
+    z-index: -1
+    right: get-vw(15px)
+    top: 0
+    width: get-vw(1000px)
+  &__wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-areas: 'left right'
+    height: get-vw(645px)
+  img
+    position: absolute
+    top: get-vw(40px)
+    right: get-vw(-330px)
+    width: get-vw(1500px)
+

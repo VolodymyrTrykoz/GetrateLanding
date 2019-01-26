@@ -1,0 +1,68 @@
+$blue: #001d99
+
+$roboto: 'Roboto', sans-serif
+// placeholders
+
+
+%transition
+  transition: 0.2s linear
+
+
+%br10
+  border-radius: 1em
+
+
+
+// extends
+%vam
+  display: block
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+
+%ham
+  display: block
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+
+%yTransform
+  position: relative
+  transform: translateX(100%)
+
+%xTransform
+  position: relative
+  transform: translateX(150%)
+
+%opacity
+  opacity: 0
+
+%relative
+  position: relative
+
+%bsh
+  box-shadow: 0 3px 10px 3px rgba(222,231,237,.9)
+
+%txtGrad
+  background: -webkit-linear-gradient(45deg,#03b0be,#14e0e4)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+
+@function get-vw($object)
+  $vw: (1920 * 0.01) * 1px
+  @return ($object / $vw) * 1vw
+
+@function get-vh($object)
+  $vh: (974 * 0.01) * 1px
+  @return ($object / $vh) * 1vh
+
+@function get-percents($object)
+  @return ($object * 100) / 1920px + %
+
+@function get-rem($pixels, $context: $browser-context)
+  @return #{$pixels/$context}rem
+
+
+
+

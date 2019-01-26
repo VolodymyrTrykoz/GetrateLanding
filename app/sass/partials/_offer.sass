@@ -1,0 +1,92 @@
+.offer
+  position: relative
+  background:  url(../img/map.jpg) no-repeat
+  background-position: -18vw 0
+  transition: background-position 0.7s ease-in-out
+  &.active
+    background-position: -10vw 0
+    .app
+      visibility: visible
+      opacity: 1
+      left: 0
+      &.topShift
+        top: get-vw(-250px)
+    .white
+      left: 22vw
+      visibility: hidden
+      opacity: 0
+    .blue
+      left: 22vw
+      visibility: visible
+      opacity: 1
+  .app
+    position: absolute
+    top: get-vw(-80px)
+    width: get-vw(445px)
+    visibility: hidden
+    opacity: 0
+    left: -10vw
+    transition: top .8s ease-in-out, left 0.8s ease-in-out, visibility 0.2s ease-in-out, opacity 0.2s ease-in-out
+  &__cover
+    background-image: linear-gradient(to right, rgba(255, 255,255, 0) 0%, rgba(250, 252, 252, 1) 45%)
+  &__wrapper
+    padding: get-vw(90px) 0
+    display: grid
+    grid-template-columns: 1fr 1fr
+  h2
+    font-size: get-vw(56px)
+    color: #21314B
+  p
+    font-size: get-vw(18px)
+    color: #9ab4c1
+    line-height: 1.7
+  &__left
+    img
+      position: absolute
+      left: get-vw(550px)
+      top: get-vw(270px)
+      width: get-vw(200px)
+      .inactive
+        z-index: 4
+      .active
+        z-index: 5
+  &__right
+    align-self: center
+    @extend %relative
+  .label
+    @extend %relative
+    padding-left: get-vw(25px)
+    line-height: 2.5
+    cursor: pointer
+    font-size: get-vw(18px)
+    color: #9ab4c1
+
+  .blue
+    visibility: hidden
+    opacity: 0
+    left: 14vw
+    transition: left 0.7s ease-in-out, visibility 0.2s ease-in-out, opacity 0.2s ease-in-out
+  .white
+    left: 14vw
+    transition: left 0.7s ease-in-out
+  input
+    width: 1px
+    opacity: 0
+    color: #21314b
+
+  .checkbox__wrapp
+    position: relative
+    .romb
+      position: absolute
+      width: get-vw(7px)
+      height: get-vw(7px)
+      background-color: #9ab4c1
+      transform: rotateZ(45deg)
+      left: get-vw(20px)
+      top: get-vw(18px)
+      z-index: 2
+    &.active
+      .romb
+        background: #f7b253
+      .label
+        color: #21314B

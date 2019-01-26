@@ -1,0 +1,194 @@
+@media screen and (max-width: 1800px)
+  .whyYouNeedThat
+      h2
+        line-height: 1.5
+
+@media screen and (max-width: 1024px)
+  .whyYouNeedThat
+    p
+      font-size: 16px
+      &:first-child
+        font-size: 17px
+        padding-left: 25px
+        padding-top: 25px
+    &__left
+      padding: 10px 0
+    &__slider
+      top: 14.9vw
+      p
+        font-size: 15px
+      .uber
+        padding-top: 0
+    .uberSVG
+      width: 80px
+@media screen and (max-width: 768px)
+  .whyYouNeedThat
+    &__slider
+      top: 25vw
+@media screen and (max-width: 500px)
+  .whyYouNeedThat
+    background-image: linear-gradient(180deg,#001d99 130vw,#fafcfc 130vw)
+    &__wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr 1fr
+      grid-template-areas: 'left''right'
+      padding-bottom: 30vw
+    &__left
+      grid-area: left
+      h2
+        line-height: 15vw
+      p
+        width: 100%
+        padding-top: 7vw
+        font-size: 4.8vw
+        line-height: 26px
+    &__right
+      grid-area: right
+      span
+        font-size: 5.25vw
+        padding: 12vw 0
+        line-height: 26px
+      p:first-child
+        padding-left: 0
+    & .uberSVG
+       height: 25px
+    h2
+      font-size: 9.5vw
+      &:after
+        bottom: -8vw
+        width: 25vw
+        height: 3px
+    &__slider
+      top: 80vw
+      img
+        max-height: 9.08333vw
+        height: 40px
+      p
+        font-size: 14px
+        line-height: 20px
+        color: #9ab4c1
+    .slider__item
+      margin-bottom: 10px
+    .partCircle
+      bottom: 153vw
+      width: 63vw
+      &SM
+        right: -1vw
+        top: .2vw
+        width: 15vw
+
+
+    //slider
+    .slick-prev, .slick-next
+      top: 84vw
+      width: 17vw
+      height: 17vw
+    .slider__item
+      margin-left: 0
+    .slick-next
+      left: 75vw
+    .slick-prev
+      left: 58vw
+      background: url(../img/svg/left-arrow.svg), #fafcfc
+      background-size: 35%
+      background-repeat: no-repeat
+      background-position: center center
+@media screen and (max-width: 1890px)
+  .slick-prev, .slick-next
+    bottom: get-vw(-140px)
+@media screen and (max-width: 1800px)
+  .slick-prev, .slick-next
+    bottom: get-vw(-172px)
+@media screen and (max-width: 1579px)
+  .slick-prev, .slick-next
+    bottom: get-vw(-205px)
+  .slick-prev
+    left: -2.55vw
+  .slick-next
+    left: 0vw
+@media screen and (max-width: 1500px)
+  .slick-prev, .slick-next
+    bottom: get-vw(-210px)
+
+@media screen and (max-width: 1400px)
+  .slick-prev, .slick-next
+    bottom: get-vw(-215px)
+
+@media screen and (max-width: 1200px)
+  .slick-prev, .slick-next
+    bottom: get-vw(-273px)
+  .slick-prev
+    left: -2.5vw
+@media screen and (max-width: 1024px)
+  .slick-prev, .slick-next
+    bottom: get-vw(-127px)
+  .slick-prev
+    left: -3.1vw
+  .slick-next
+    left: -0.5vw
+
+@media screen and (max-width: 768px)
+  .slick-prev, .slick-next
+    top: 22.6vw
+  .slick-prev
+    left: -3.1vw
+  .slick-next
+    left: -0.5vw
+@media screen and (max-width: 499px)
+  .whyYouNeedThat
+    background-image: linear-gradient(180deg,#001d99 108vw,#fafcfc 108vw)
+    .partCircle
+      bottom: 130vw
+    .slick-prev, .slick-next
+      top: 65vw
+    .img
+      width: 135vw
+      right: -25vw
+
+@media screen and (max-width: 450px)
+  .whyYouNeedThat
+    &__slider
+      top: 70vw
+    .uberSVG
+      height: 4vw
+  .slick-prev, .slick-next
+    top: 25.5vw
+
+@media screen and (max-width: 420px)
+  .whyYouNeedThat
+    background-image: linear-gradient(180deg,#001d99 110vw,#fafcfc 110vw)
+    .partCircle
+      bottom: 100vw
+    .slick-prev, .slick-next
+      top: 80vw
+    .img
+      width: 135vw
+      right: -25vw
+    &__wrapper
+      p
+        &:first-child
+          padding-top: 70px
+
+@media screen and (max-width: 414px)
+  .whyYouNeedThat
+    background-image: linear-gradient(180deg, #001d99 110vw, #fafcfc 110vw)
+    &__wrapper
+      padding-bottom: 60vw
+
+@media screen and (max-width: 375px)
+  .whyYouNeedThat
+    background-image: linear-gradient(180deg, #001d99 110vw, #fafcfc 110vw)
+    &__slider
+      top: 70vw
+    .slick-prev, .slick-next
+      top: 85vw
+
+@media screen and (max-width: 320px)
+  .whyYouNeedThat
+    background-image: linear-gradient(180deg, #001d99 120vw, #fafcfc 120vw)
+    &__slider
+      top: 80vw
+    &__wrapper
+      padding-bottom: 70vw
+    .slick-prev, .slick-next
+      top: 93vw

@@ -1,0 +1,77 @@
+.access
+  position: relative
+  .circleMD
+    position: absolute
+    z-index: 100
+    width: get-vw(200px)
+    left: get-vw(-100px)
+    top: get-vw(-50px)
+  &__wrapper
+    background: $blue
+    color: #fff
+    text-align: center
+    border-radius: 8px
+    padding: get-vw(30px) 0 get-vw(75px)
+    position: relative
+    overflow: hidden
+    .partCircle
+      position: absolute
+      left: 0
+      bottom: 0
+      width: get-vw(350px)
+      &SM
+        position: absolute
+        right: 0
+        top: 0
+        width: 6.5vw
+  h2
+    font-size: get-vw(56px)
+    margin-bottom: get-vw(35px)
+  p
+    width: 50%
+    margin: 0 auto get-vw(20px)
+    line-height: 1.5
+    opacity: .7
+    font-size: get-vw(24px)
+  input
+    background-color: transparent
+    border: none
+    border-bottom: get-vw(2px) solid #4563E5
+    color: #fff
+    padding: get-vw(10px) 0 get-vw(10px) get-vw(12px)
+    outline: none
+    font-size: get-vw(24px)
+    width: 100%
+    &:focus, &.isntEmpty
+      ~ label
+        font-size: get-vw(14px)
+        color: rgba(255,255,255,0.7)
+        top: 0
+        transform: translateY(-50%)
+    &.invalid
+      transition: border-bottom 0.3s ease-in-out
+      border-bottom: get-vw(2px) solid #cc2121
+  .form
+    width: 32%
+    margin: 0 auto
+    padding: get-vw(50px) 0 get-vw(20px)
+  &__box
+    text-align: center
+
+button
+   border: none
+.formGroup
+  position: relative
+  margin: 0 0 get-vw(35px)
+  &:last-of-type
+    margin-bottom: get-vw(55px)
+label
+  position: absolute
+  left: get-vw(15px)
+  top: 50%
+  transform: translate(0, -50%)
+  font-size: get-vw(24px)
+  color: #fff
+  cursor: text
+  transition: font-size, top, transform, 200ms ease-in-out
+

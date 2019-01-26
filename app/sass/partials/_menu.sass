@@ -1,0 +1,61 @@
+.menu
+  display: flex
+  align-items: center
+  width: get-vw(250px)
+  position: fixed
+  right: get-vw(-60px)
+  padding: get-vw(50px)
+  background: #fff
+  z-index: 500
+  top: 0
+  transform: rotateZ(-90deg)
+  cursor: pointer
+  &:hover
+    .menu__btn-one
+      height: 30px
+      bottom: 0
+    .menu__btn-two
+      top: -15px
+  span
+    text-transform: uppercase
+    color:  $blue
+  &__btn
+    height: 30px
+    width: 30px
+    position: relative
+    overflow: hidden
+    cursor: pointer
+
+    &-one
+      position: absolute
+      left: 0
+      top: 0
+      width: 2px
+      height: 15px
+      background: $blue
+      border-radius: 15px
+      @extend %transition
+    &-two
+      position: absolute
+      left: 30%
+      top: 0
+      width: 2px
+      height: 30px
+      background: $blue
+      border-radius: 15px
+      @extend %transition
+
+  &.menu-js-opened
+    .menu__btn-one
+      height: 100%
+      transform: rotate(135deg)
+      left: 35%
+    .menu__btn-two
+      transform: rotate(-135deg)
+      left: 35%
+      top: 0
+    &:hover
+      .menu__btn-one
+        top: 0
+
+
